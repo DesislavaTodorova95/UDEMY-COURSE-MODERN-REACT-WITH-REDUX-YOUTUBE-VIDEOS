@@ -2,9 +2,9 @@ import React from "react";
 
 class SearchBar extends React.Component {
   state = { term: "" };
-  onFormSubmit= e =>{
-   e.preventDefault();
-this.props.onTermSubmit(this.state.term);
+  onFormSubmit = (e) => {
+    e.preventDefault();
+    this.props.onTermSubmit(this.state.term);
   };
   render() {
     return (
